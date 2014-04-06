@@ -85,6 +85,13 @@ thumbnailPlugin = (schema, options={}) ->
       width: size
       format: format
       filter: 'Lanczos'     # 'Lagrange'
+    #If a size contains ">" character, e.g. 64>, apply both to size and width. This allows a user to specify 
+    #Size: "64>" which will resize the largest size to 64.
+    #A better approach would probably be to make sure it ends with > and check for e.g. ^> 
+    if size.contains and size.contains(">")
+      im_resize_opts.width = size
+      im_resize_opts.height = size
+
     if modeInline
       im_resize_opts.srcData = fs.readFileSync image_path, 'binary'
     else
