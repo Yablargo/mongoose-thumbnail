@@ -1,8 +1,8 @@
-{   "name": "mongoose-thumbnail"
+{   "name": "mg-mongoose-thumbnail"
   , "description": "Mongoose plugin adding a thumbnail field to a schema - useful for expressjs image file uploads"
-  , "version": "0.0.1"
-  , "homepage": "https://github.com/panta/mongoose-thumbnail"
-  , "author": "Marco Pantaleoni <marco.pantaleoni@gmail.com>"
+  , "version": "0.0.2"
+  , "homepage": "https://github.com/Yablargo/mongoose-thumbnail"
+  , "author": "Matthew Galligan (matthew.galligan@gmail.com) forked from Marco Pantaleoni <marco.pantaleoni@gmail.com>"
   , "dependencies": {
       "mongoose": ">= 3.0.1"
     , "mkdirp": ">= 0.3.4"
@@ -20,10 +20,10 @@
   , "keywords": ["mongoose", "plugin", "plugins", "types", "image", "picture", "thumbnail", "file", "upload", "express"]
   , "repository": {
       "type": "git"
-    , "url": "git://github.com/panta/mongoose-thumbnail.git"
+    , "url": "git://github.com/Yablargo/mongoose-thumbnail.git"
   }
   , "bugs": {
-    "url" : "https://github.com/panta/mongoose-thumbnail/issues"
+    "url" : "https://github.com/Yablargo/mongoose-thumbnail/issues"
   }
   , "licenses": [{ 
       "type": "MIT", 
